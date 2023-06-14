@@ -1,3 +1,9 @@
+<script>
+import headr from '../components/header.vue';
+export default{
+    components:{headr}
+}
+</script>
 <template>
-	<h1>Home Vue Template</h1>
+    <headr/>
 </template>

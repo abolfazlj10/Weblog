@@ -1,0 +1,28 @@
+/* https://colorhunt.co/palette/27374d526d829db2bfdde6ed */
+@font-face {
+    font-family: vazir;
+    src: url('./Vazirmatn-Thin.ttf');
+}
+@font-face {
+    font-family: vazirbold;
+    src: url('./Vazirmatn-SemiBold.ttf');
+}
+:root{
+    --border:#27374d13;
+    --CPrimary:#27374D;
+    --CB:#0079FF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: vazir;
+    font-weight: bold;
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
