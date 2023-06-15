@@ -34,7 +34,7 @@ export default{
         <div class="CHB">
             <div class="TS">
                 <div class="FTS">
-                    <div class="TSB" v-for="i in 3" :class="i != 1 ? 'BTSB' : ''">
+                    <div class="TSB" v-for="i in 3">
                         <div class="TSBC">
                             <div class="TTS"><router-link to="/">{{ desc[i] }}</router-link></div>
                             <div class="DB">{{ loremI }}</div>
@@ -187,18 +187,18 @@ export default{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:10px;
-    padding:10px 5px;
+    padding: 5px;
     flex-grow: 1;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .HS{
     border-radius: 5px;
     overflow: hidden;
 }
-.BTSB{ /* Border Three Slide Box*/
-    border-top:1px solid var(--border);
-}
 .TSBC{
-    text-align: justify;
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -237,7 +237,11 @@ export default{
     display: grid;
     grid-template-rows: 2fr 1fr;
     gap:10px;
-    padding:10px 5px;
+    padding:5px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .COS .DC{
     text-align: right;
@@ -254,5 +258,6 @@ export default{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap:10px;
 }
 </style>
