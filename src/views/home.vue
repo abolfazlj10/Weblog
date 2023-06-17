@@ -18,5 +18,6 @@ export default{
     background-color: #f1f1f1;
     border: 5px solid #ffffff;
     border-radius: 8px;
+    height: 100vh;
 }
 </style>
