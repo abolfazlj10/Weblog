@@ -86,8 +86,7 @@
 <style>
 .CS{ /* Container Swiper */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-  margin:30px 20px ;
-
+  margin:30px 0 ;
 }
 .swiper {
   height: 600px;
@@ -97,7 +96,6 @@
 }
 
 .swiper-slide {
-  /* padding:50px; */
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -170,9 +168,6 @@
 .SI{ /* Slide Item */
   background-position: center;
   background-size: cover;
-}
-.timer{
-  color:#FFF;
 }
 .LI{
   width: 100%;

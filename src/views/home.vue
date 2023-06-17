@@ -1,8 +1,9 @@
 <script>
 import headr from '../components/header.vue';
 import slider from '../components/slider.vue';
+import topics from '../components/topics.vue';
 export default{
-    components:{headr,slider}
+    components:{headr,slider,topics}
 }
 </script>
 <template>
@@ -11,13 +12,16 @@ export default{
         <div class="container">
             <slider/>
         </div>
+        <div class="container">
+            <topics/>
+        </div>
     </div>
 </template>
 <style scoped>
 .CM{ /* Container Main */
-    background-color: #f1f1f1;
+    background-color: #f4f4f4;
     border: 5px solid #ffffff;
     border-radius: 8px;
-    height: 100vh;
+    height: 1900px;
 }
 </style>
