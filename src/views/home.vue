@@ -2,8 +2,9 @@
 import headr from '../components/header.vue';
 import slider from '../components/slider.vue';
 import topics from '../components/topics.vue';
+import message from '../components/message.vue';
 export default{
-    components:{headr,slider,topics}
+    components:{headr,slider,topics,message}
 }
 </script>
 <template>
@@ -14,6 +15,9 @@ export default{
         </div>
         <div class="container">
             <topics/>
+        </div>
+        <div class="container">
+            <message/>
         </div>
     </div>
 </template>
