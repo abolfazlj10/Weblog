@@ -3,8 +3,9 @@ import headr from '../components/header.vue';
 import slider from '../components/slider.vue';
 import topics from '../components/topics.vue';
 import message from '../components/message.vue';
+import search from '../components/search.vue'
 export default{
-    components:{headr,slider,topics,message}
+    components:{headr,slider,topics,message,search}
 }
 </script>
 <template>
@@ -19,6 +20,10 @@ export default{
         <div class="container">
             <message/>
         </div>
+        <div class="container CC">
+            <search/>
+            <div>category</div>
+        </div>
     </div>
 </template>
 <style scoped>
@@ -27,5 +32,14 @@ export default{
     border: 5px solid #ffffff;
     border-radius: 8px;
     height: 1900px;
+}
+.CC{ /* Container Content */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:60px;
+    margin-top: 30px;
+}
+.CC > *{
+    background: #FFF;
 }
 </style>
