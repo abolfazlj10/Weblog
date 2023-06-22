@@ -14,6 +14,7 @@
 .BS{ /* Container Search */
     padding: 50px;
     border-radius: 10px;
+    background-color: #FFF;
 }
 .S{ /* Search */
     background-color: #F5F5F5;

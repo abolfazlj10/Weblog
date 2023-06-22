@@ -3,9 +3,10 @@ import headr from '../components/header.vue';
 import slider from '../components/slider.vue';
 import topics from '../components/topics.vue';
 import message from '../components/message.vue';
-import search from '../components/search.vue'
+import search from '../components/search.vue';
+import heading from '../components/heading.vue';
 export default{
-    components:{headr,slider,topics,message,search}
+    components:{headr,slider,topics,message,search,heading}
 }
 </script>
 <template>
@@ -21,8 +22,11 @@ export default{
             <message/>
         </div>
         <div class="container CC">
-            <search/>
-            <div>category</div>
+            <div>
+                <search/>
+                <heading txt="جدید ترین نوشته ها"/>
+            </div>
+            <div class="CTG">category</div>
         </div>
     </div>
 </template>
@@ -40,6 +44,9 @@ export default{
     margin-top: 30px;
 }
 .CC > *{
-    background: #FFF;
+    /* background: #FFF; */
+}
+.CTG{ /* Category */
+    background-color: #FFF;
 }
 </style>
