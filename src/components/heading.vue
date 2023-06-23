@@ -1,10 +1,19 @@
 <script>
 export default{
-    props:['txt']
+    props:['txt','type']
 }
 </script>
 <template>
-    <div class="CT">
+    <div v-if="type == 'side'" class="CTS">
+        <div>
+            <div class="T">{{ txt }}</div>
+        </div>
+        <div class="CB">
+            <div class="FB FBS"></div>
+            <div class="SB SBS"></div>
+        </div>
+    </div>
+    <div v-else class="CT">
         <div class="FB"></div>
         <div class="SB"></div>
         <div class="T">{{ txt }}</div>
@@ -34,5 +43,26 @@ export default{
     height: 7px;
     width: 13px;
     border-radius: 10px;
+}
+
+/* Side */
+.CTS{ /* Container Title */
+    font-size: 17px;
+    font-family: vazirBold;
+    color:#747474;
+}
+.CB{ /* Container Borders */
+    display: flex;
+    align-items: center; 
+    gap:3px;
+    margin-top: 5px;
+}
+.FBS{ /* First Border Sidebar*/
+    width: 50px;
+    height: 6px;
+}
+.SB{ /* Second Border Side */
+    width: 17px;
+    height: 6px;
 }
 </style>

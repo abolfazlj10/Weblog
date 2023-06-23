@@ -6,8 +6,9 @@ import message from '../components/message.vue';
 import search from '../components/search.vue';
 import heading from '../components/heading.vue';
 import posts from '../components/post.vue';
+import sidebar from '../components/sidebar.vue';
 export default{
-    components:{headr,slider,topics,message,search,heading,posts}
+    components:{headr,slider,topics,message,search,heading,posts,sidebar}
 }
 </script>
 <template>
@@ -28,7 +29,9 @@ export default{
                 <heading txt="جدید ترین نوشته ها"/>
                 <posts/>
             </div>
-            <div class="CTG">category</div>
+            <div>
+                <sidebar/>
+            </div>
         </div>
     </div>
 </template>
@@ -44,8 +47,5 @@ export default{
     grid-template-columns: 2fr 1fr;
     gap:60px;
     margin-top: 30px;
-}
-.CTG{ /* Category */
-    background-color: #FFF;
 }
 </style>

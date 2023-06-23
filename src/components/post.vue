@@ -53,6 +53,7 @@ export default{
     display: grid;
     grid-template-columns: 300px 3fr;
     gap:20px;
+    border-radius: 10px;
 }
 .P:hover .IP{
     transform:scale(1.1)
